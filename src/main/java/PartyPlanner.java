@@ -19,6 +19,13 @@ class PartyPlanner {
     return mPartySize;
   }
 
+  public String getFoodType() {
+    return mFood;
+  }
+
+  public String getBeverageType() {
+    return mBeverages;
+  }
 
   // public int partySize(int guests){
   //   if (guests <= 35) {

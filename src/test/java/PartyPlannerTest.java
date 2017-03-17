@@ -16,8 +16,17 @@ public class PartyPlannerTest {
       assertEquals(10, testPartyPlanner.getPartySize());
     }
 
+  @Test
+    public void PartyPlanner_getFoodType_String() {
+      PartyPlanner testPartyPlanner = new PartyPlanner(10, "snacks", "light bar", "clown", "birthday");
+      assertEquals("snacks", testPartyPlanner.getFoodType());
+      }
 
-
+  @Test
+    public void PartyPlanner_getBeverageType_String() {
+      PartyPlanner testPartyPlanner = new PartyPlanner(10, "snacks", "light bar", "clown", "birthday");
+      assertEquals("light bar", testPartyPlanner.getBeverageType());
+      }
 
 
     // @Test
