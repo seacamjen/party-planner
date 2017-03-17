@@ -172,4 +172,19 @@ class PartyPlanner {
     return total;
   }
 
+  public int sportPackage() {
+    int total = totalPrice();
+    if (mPartySize >= 50 && mFood.equals("dinner") && beveragePrice() > 0 && mEntertainment.equals("comedian") && mDecorations.equals("sports")){
+      total = total - 550;
+      return total;
+    }
+    return total;
+  }
+
+
+
+
+
+
+
 }
