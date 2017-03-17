@@ -59,5 +59,12 @@ class PartyPlanner {
     return total;
   }
 
-
+  public int beveragePrice() {
+    int total = 0;
+    if (mPartySize <= 35) {
+      total = mPartySize * 25;
+      return total;
+    }
+    return total;
+  }
 }
