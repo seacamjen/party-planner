@@ -5,12 +5,21 @@ public class PartyPlannerTest {
 
 
   @Test
-    public void PartyPlanner_instantiatesCorrectly(){
+    public void PartyPlanner_instantiatesCorrectly() {
       PartyPlanner testPartyPlanner = new PartyPlanner(10, "snacks", "light bar", "clown", "birthday");
       assertEquals(true, testPartyPlanner instanceof PartyPlanner);
     }
 
-    
+  @Test
+    public void PartyPlanner_getPartySize_10() {
+      PartyPlanner testPartyPlanner = new PartyPlanner(10, "snacks", "light bar", "clown", "birthday");
+      assertEquals(10, testPartyPlanner.getPartySize());
+    }
+
+
+
+
+
     // @Test
     // public void PartyPlanner_partyOfTenReturnsPrice_50() {
     //   PartyPlanner testPartyPlanner = new PartyPlanner();
