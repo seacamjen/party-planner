@@ -7,5 +7,8 @@ public class PartyPlannerTest {
     public void PartPlanner_partyOfTenReturnsPrice_50() {
       PartyPlanner testPartyPlanner = new PartyPlanner();
       assertEquals(50, testPartyPlanner.partySize(10));
+      assertEquals(250, testPartyPlanner.partySize(375));
     }
+
+
 }
