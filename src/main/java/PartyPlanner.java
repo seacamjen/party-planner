@@ -62,7 +62,22 @@ class PartyPlanner {
   public int beveragePrice() {
     int total = 0;
     if (mPartySize <= 35) {
-      total = mPartySize * 25;
+      total = mPartySize * 15;
+      return total;
+    } else if (mPartySize > 35 && mPartySize <= 70) {
+      total = mPartySize * 14;
+      return total;
+    } else if (mPartySize > 70 && mPartySize <= 125) {
+      total = mPartySize * 13;
+      return total;
+    } else if (mPartySize > 125 && mPartySize <= 200) {
+      total = mPartySize * 10;
+      return total;
+    } else if (mPartySize > 200 && mPartySize <= 300) {
+      total = mPartySize * 9;
+      return total;
+    } else if (mPartySize > 300 && mPartySize <= 450) {
+      total = mPartySize * 7;
       return total;
     }
     return total;

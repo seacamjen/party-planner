@@ -53,9 +53,15 @@ public class PartyPlannerTest {
       }
 
   @Test
-    public void PartyPlanner_determineBeveragePrice_1875() {
+    public void PartyPlanner_determineBeveragePrice_250() {
       PartyPlanner testPartyPlanner = new PartyPlanner(10, "snacks", "light bar", "clown", "birthday");
-      assertEquals(250, testPartyPlanner.beveragePrice());
+      assertEquals(150, testPartyPlanner.beveragePrice());
+      }
+
+  @Test
+    public void PartyPlanner_determineBeveragePrice_2107() {
+      PartyPlanner testPartyPlanner = new PartyPlanner(301, "snacks", "light bar", "clown", "birthday");
+      assertEquals(2107, testPartyPlanner.beveragePrice());
       }
 
 }
