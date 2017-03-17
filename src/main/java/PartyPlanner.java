@@ -192,8 +192,4 @@ class PartyPlanner {
     return total;
   }
 
-
-
-
-
 }
