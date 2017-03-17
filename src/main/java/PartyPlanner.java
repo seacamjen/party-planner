@@ -27,6 +27,10 @@ class PartyPlanner {
     return mBeverages;
   }
 
+  public String getEntertainmentType() {
+    return mEntertainment;
+  }
+
   // public int partySize(int guests){
   //   if (guests <= 35) {
   //     return 50;
