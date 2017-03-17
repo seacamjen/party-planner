@@ -154,6 +154,22 @@ class PartyPlanner {
     return total;
   }
 
+  public int birthdayPackage() {
+    int total = totalPrice();
+    if (mPartySize >= 50 && mFood.equals("dinner") && beveragePrice() > 0 && mEntertainment.equals("clown") && mDecorations.equals("birthday")){
+      total = total - 100;
+      return total;
+    }
+    return total;
+  }
 
+  public int weddingPackage() {
+    int total = totalPrice();
+    if (mPartySize >= 100 && mFood.equals("dinner") && mBeverages.equals("premium bar") && entertainmentPrice() > 0 && decorationPrice() > 0 ) {
+      total = total - 600;
+      return total;
+    }
+    return total;
+  }
 
 }
