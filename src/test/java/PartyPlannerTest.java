@@ -40,6 +40,11 @@ public class PartyPlannerTest {
       assertEquals("birthday", testPartyPlanner.getDecorationsType());
       }
 
+  @Test
+    public void PartyPlanner_determineFoodPrice_100() {
+      PartyPlanner testPartyPlanner = new PartyPlanner(10, "snacks", "light bar", "clown", "birthday");
+      assertEquals(100, testPartyPlanner.foodPrice());
+      }
 
     // @Test
     // public void PartyPlanner_partyOfTenReturnsPrice_50() {

@@ -35,6 +35,15 @@ class PartyPlanner {
     return mDecorations;
   }
 
+  public int foodPrice() {
+    int total = 0;
+    if (mPartySize <= 35) {
+      total = mPartySize * 10;
+      return total;
+    }
+    return total;
+  }
+
   // public int partySize(int guests){
   //   if (guests <= 35) {
   //     return 50;

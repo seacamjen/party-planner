@@ -29,6 +29,12 @@ This application will return a price on how much a party will cost to plan takin
   * Example Input: birthday party
   * Example Output: $75
 
+6. total add up with guests, food, beverages, entertainment, decorations
+  * Example Input: 10 guests, ligtht snacks, full bar, band, birthday party
+  * Example Output: $860
+
+
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
