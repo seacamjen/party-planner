@@ -82,4 +82,21 @@ class PartyPlanner {
     }
     return total;
   }
+
+  public int entertainmentPrice() {
+    if (mEntertainment.equals("clown")) {
+      return 200;
+    } else if (mEntertainment.equals("comedian")) {
+      return 450;
+    } else if (mEntertainment.equals("band")) {
+      return 600;
+    }
+    return 0;
+  }
+
+
+
+
+
+
 }
