@@ -134,6 +134,8 @@ class PartyPlanner {
       return 450;
     } else if (mEntertainment.equals("band")) {
       return 600;
+    } else if (mEntertainment.equals("dj")){
+      return 500;
     }
     return 0;
   }
@@ -183,7 +185,10 @@ class PartyPlanner {
 
   public int fiveFiveZeroDiscount() {
     int total = totalPrice();
-    total = total - 550;
+    if (totalPrice() > 2000){
+      total = total - 550;
+      return total;
+    }
     return total;
   }
 

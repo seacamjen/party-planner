@@ -30,10 +30,12 @@ This application will return a price on how much a party will cost to plan takin
   * Example Output: $75
 
 6. total add up with guests, food, beverages, entertainment, decorations
-  * Example Input: 10 guests, ligtht snacks, full bar, band, birthday party
+  * Example Input: 10 guests, light snacks, full bar, band, birthday party
   * Example Output: $860
 
-
+6. apply discount for of 550
+  * Example Input: coupon == fivefive0
+  * Example Output: $860 - 550
 
 ## Setup/Installation Requirements
 
