@@ -94,6 +94,16 @@ class PartyPlanner {
     return 0;
   }
 
+  public int decorationPrice() {
+    if (mDecorations.equals("birthday")) {
+      return 100;
+    } else if (mDecorations.equals("wedding")) {
+      return 600;
+    } else if (mDecorations.equals("sports")) {
+      return 450;
+    }
+    return 0;
+  }
 
 
 
