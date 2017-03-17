@@ -40,31 +40,24 @@ class PartyPlanner {
     if (mPartySize <= 35) {
       total = mPartySize * 10;
       return total;
+    } else if (mPartySize > 35 && mPartySize <= 70) {
+      total = mPartySize * 9;
+      return total;
+    } else if (mPartySize > 70 && mPartySize <= 125) {
+      total = mPartySize * 8;
+      return total;
+    } else if (mPartySize > 125 && mPartySize <= 200) {
+      total = mPartySize * 7;
+      return total;
+    } else if (mPartySize > 200 && mPartySize <= 300) {
+      total = mPartySize * 6;
+      return total;
+    } else if (mPartySize > 300 && mPartySize <= 450) {
+      total = mPartySize * 5;
+      return total;
     }
     return total;
   }
 
-  // public int partySize(int guests){
-  //   if (guests <= 35) {
-  //     return 50;
-  //   } else if (guests > 35 && guests <= 70) {
-  //     return 75;
-  //   } else if (guests > 70 && guests <= 125) {
-  //     return 100;
-  //   } else if (guests > 125 && guests <= 200) {
-  //     return 150;
-  //   } else if (guests > 200 && guests <= 300) {
-  //     return 200;
-  //   } else if (guests > 300 && guests <= 450) {
-  //     return 250;
-  //   }
-  //   return 0;
-  // }
-  //
-  // public int foodType(String food){
-  //   if (food.equals("snack")){
-  //     return 100;
-  //   }
-  //   return 0;
-  // }
+
 }

@@ -46,18 +46,11 @@ public class PartyPlannerTest {
       assertEquals(100, testPartyPlanner.foodPrice());
       }
 
-    // @Test
-    // public void PartyPlanner_partyOfTenReturnsPrice_50() {
-    //   PartyPlanner testPartyPlanner = new PartyPlanner();
-    //   assertEquals(50, testPartyPlanner.partySize(10));
-    //   assertEquals(250, testPartyPlanner.partySize(375));
-    // }
-    //
-    // @Test
-    // public void PartyPlanner_lightSnackReturnsPrice_100() {
-    //   PartyPlanner testPartyPlanner = new PartyPlanner();
-    //   assertEquals(100, testPartyPlanner.foodType("snack"));
-    // }
+  @Test
+    public void PartyPlanner_determineFoodPrice_1875() {
+      PartyPlanner testPartyPlanner = new PartyPlanner(375, "snacks", "light bar", "clown", "birthday");
+      assertEquals(1875, testPartyPlanner.foodPrice());
+      }
 
 
 }
