@@ -19,6 +19,7 @@ public class App {
 
     while (programRun) {
 
+      System.out.println("^^^^^^^^^^^Main Menu^^^^^^^^^^^");
       System.out.println("Welcome to the best party planning ever! What would you like to do?");
       System.out.println("1. If you would like to look at existing plans enter: plan");
       System.out.println("2. If you would like to create your own plan enter: create");
@@ -136,6 +137,5 @@ public class App {
         programRun = false;
       }
     } //while loop end
-
   }
 }
