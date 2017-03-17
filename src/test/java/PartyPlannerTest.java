@@ -112,4 +112,9 @@ public class PartyPlannerTest {
     assertEquals(3000, testPartyPlanner.sportPackage());
   }
 
+  @Test
+  public void PartyPlanner_giveFiveHundredFiftyDollarDiscount_(){
+    PartyPlanner testPartyPlanner = new PartyPlanner(50, "dinner", "light bar", "comedian", "sports");
+    assertEquals(3000, testPartyPlanner.fiveFiveZeroDiscount());
+  }
 }

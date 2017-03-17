@@ -181,7 +181,11 @@ class PartyPlanner {
     return total;
   }
 
-
+  public int fiveFiveZeroDiscount() {
+    int total = totalPrice();
+    total = total - 550;
+    return total;
+  }
 
 
 
