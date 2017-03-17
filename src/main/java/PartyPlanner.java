@@ -31,6 +31,10 @@ class PartyPlanner {
     return mEntertainment;
   }
 
+  public String getDecorationsType() {
+    return mDecorations;
+  }
+
   // public int partySize(int guests){
   //   if (guests <= 35) {
   //     return 50;

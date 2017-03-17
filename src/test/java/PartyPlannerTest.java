@@ -34,6 +34,11 @@ public class PartyPlannerTest {
       assertEquals("clown", testPartyPlanner.getEntertainmentType());
       }
 
+  @Test
+    public void PartyPlanner_getDecorationsType_String() {
+      PartyPlanner testPartyPlanner = new PartyPlanner(10, "snacks", "light bar", "clown", "birthday");
+      assertEquals("birthday", testPartyPlanner.getDecorationsType());
+      }
 
 
     // @Test
