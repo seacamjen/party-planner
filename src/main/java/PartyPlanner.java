@@ -105,7 +105,10 @@ class PartyPlanner {
     return 0;
   }
 
-
+  public int totalPrice() {
+    int total = foodPrice() + beveragePrice() + entertainmentPrice() + decorationPrice(); 
+    return total;
+  }
 
 
 
